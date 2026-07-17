@@ -16,6 +16,7 @@ Music Blog is a responsive website where users can explore music-related content
 
 * HTML5
 * CSS3
+* JavaScript
 
 
 ## How to Run
