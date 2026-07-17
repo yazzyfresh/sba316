@@ -291,3 +291,40 @@ footer{
     color: #f8f9fa;
 }
 
+/*search bar*/
+
+.search-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.search-container input {
+    width: 300px;
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+
+ /* character count*/
+
+ #count{
+    color: #f2c94c;
+    font-size: .9rem;
+    margin-top: 8px;
+ }
+
+
+ /*message*/
+
+#message{
+    margin:15px 0;
+    font-weight: bold;
+    min-height: 20px;
+ }
+
+ .flip-card{
+    transition: .3s;
+ }

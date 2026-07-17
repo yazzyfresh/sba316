@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Share Your Story</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <style>
       .share h2 {
         letter-spacing: 2px;
@@ -46,7 +46,14 @@
 
         <form class="review-form" id="reviewForm">
           <label for="name">Your Name</label><br />
-          <input type="text" id="name" placeholder="Enter your name" required />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            minlength="2"
+            maxlength="30"
+            required
+          />
 
           <br /><br />
 
@@ -84,10 +91,14 @@
 
           <label for="favorite">Favorite Song Performed</label>
           <br />
-          <input type="text" id="favorite" />
+          <input
+            type="text"
+            id="favorite"
+            placeholder="Favorite song"
+            required
+          />
 
-          <br />
-          <br />
+          <br /><br />
 
           <label for="review">Your Review</label><br />
 
@@ -110,9 +121,10 @@
           <br />
           <input type="file" id="photo" />
 
-          <br />
-          <br />
+          <br /><br />
+
           <p id="message"></p>
+
           <input type="submit" value="Submit Review" />
         </form>
       </section>
