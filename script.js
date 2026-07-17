@@ -47,7 +47,7 @@ if (subscribeForm) {
 
     const subscribeMessage = document.getElementById("subscribeMessage");
 
-    subscribeMessage.textContent = "✅ Thanks for subscribing!";
+    subscribeMessage.textContent = "Thanks for subscribing!";
 
     subscribeMessage.style.color = "lightgreen";
 
