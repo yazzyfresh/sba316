@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "New Rocker", system-ui;
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+nav,
+p, h2 {
+  text-align: center;
+}
+
+header {
+  color: #f2c94c;
+  background-image:
+    radial-gradient( #1e1e1e,#acacac3d, #1a1a1a),
+    url(../images/crowd.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  text-shadow: 2px 2px 4px #1e1e1e;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f2c94c;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 2px 2px 4px #694c937e;
+    }
+    to{
+        text-shadow: 0 0 20px #f2c84c91;
+    }
+}
+
+/*used inline*/
+/* nav{
+    margin-bottom: 25px;
+} */
+
+nav a{
+    color: #f2c94c;
+    border-color: #1e1e1e;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    color: #6a4c93;
+}
+
+/*Hero Scection*/
+
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2{
+    margin-bottom: 20px;
+    color: #6a4c93;
+}
+
+.hero p{
+
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.hero img{
+    width: 80%;
+    max-width: 700px;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+/*card element in index page*/
+.featured{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.featured h2{
+    color: #6a4c93;
+    margin-bottom: 40px;
+}
+
+.review-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.review-card{
+    background: #111;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.review-card:hover{
+    transform: translateY(-10px);
+}
+
+.review-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.review-card h3{
+    color: #f2c94c;
+    margin: 15px 0;
+}
+
+.review-card a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #f2c94c;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.review-card a:hover{
+    background-color: #6a4c93;
+    color: white;
+}
+
+.flip-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+
+.review-card{
+    animation: slideUp 1s ease ;
+}
+
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+/*Table*/
+
+table {
+    margin: 40px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #111;
+}
+
+th {
+    color: #f2c94c;
+}
+
+td {
+    color: white;
+}
+
+th,
+td {
+    border: 2px solid #6a4c93;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*Card fliping element*/
+.flip-card{
+    width:300px;
+    height:400px;
+    perspective:1000px;
+}
+
+.flip-card-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform .8s;
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.flip-card-front{
+    background:#111;
+}
+
+.flip-card-front img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.flip-card-front h3,
+.flip-card-front p{
+    margin:15px;
+}
+
+.flip-card-back{
+    background:#6A4C93;
+    color:white;
+    transform:rotateY(180deg);
+    padding:20px;
+}
+.flip-card-front,
+.flip-card-back{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+}
+
+/*Form alignment*/
+
+.share {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.share form {
+    width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share input,
+.share select,
+.share textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #f8f9fa;
+}
+

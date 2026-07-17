@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Your Story</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <style>
+      .share h2 {
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>🎤 Front Row Notes 🎤</h1>
+
+      <nav style="margin-bottom: 25px">
+        <a href="./index.html">Home</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="./share.html">Share Your Story</a>
+      </nav>
+
+      <p>
+        Your backstage pass to concert reviews, festival highlights, and
+        unforgettable live music moments.
+      </p>
+    </header>
+
+    <main>
+      <section class="share">
+        <h2>Share Your Concert Story</h2>
+
+        <p>
+          Tell us about your favorite concert experience. Your review could
+          inspire someone's next live show!
+        </p>
+
+        <img
+          src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NXh0Z3VqOHlxa2g1MGVxbmphcGltcnQzaWs5cjh0YWllN3llend3NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohjVc03UwT8fEaXSM/giphy.gif"
+          alt="gif"
+          id="gif"
+        />
+
+        <form class="review-form" id="reviewForm">
+          <label for="name">Your Name</label><br />
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <br /><br />
+
+          <label for="artist">Artist/Band</label><br />
+          <input
+            type="text"
+            id="artist"
+            placeholder="Who did you see?"
+            required
+          />
+
+          <br /><br />
+
+          <label for="venue">Venue</label><br />
+          <input
+            type="text"
+            id="venue"
+            placeholder="Where was the concert?"
+            required
+          />
+
+          <br /><br />
+
+          <label for="rating">Rating</label><br />
+
+          <select id="rating">
+            <option>⭐⭐⭐⭐⭐ (5)</option>
+            <option>⭐⭐⭐⭐☆ (4)</option>
+            <option>⭐⭐⭐☆☆ (3)</option>
+            <option>⭐⭐☆☆☆ (2)</option>
+            <option>⭐☆☆☆☆ (1)</option>
+          </select>
+
+          <br /><br />
+
+          <label for="favorite">Favorite Song Performed</label>
+          <br />
+          <input type="text" id="favorite" />
+
+          <br />
+          <br />
+
+          <label for="review">Your Review</label><br />
+
+          <textarea
+            id="review"
+            rows="6"
+            cols="50"
+            minlength="20"
+            maxlength="300"
+            placeholder="Tell everyone about your experience..."
+            required
+          ></textarea>
+
+          <p id="count">0 / 300 characters</p>
+
+          <br />
+          <br />
+
+          <label for="photo">Concert Photo</label>
+          <br />
+          <input type="file" id="photo" />
+
+          <br />
+          <br />
+          <p id="message"></p>
+          <input type="submit" value="Submit Review" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Front Row Notes | All rights reserved</p>
+    </footer>
+  </body>
+</html>
