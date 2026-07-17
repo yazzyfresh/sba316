@@ -1,6 +1,6 @@
 Reflection Questions
 
- 1. What could you have done differently during the planning stages of your project to make the execution easier?
+1.  What could you have done differently during the planning stages of your project to make the execution easier?
 
 During the planning stages, I could have created a more detailed outline of the website structure before starting development. Planning the pages, features, and layout beforehand would have made the coding process more organized and helped prevent changes later. I also could have planned the JavaScript features earlier, such as the search bar and form validation, so I would have a clearer idea of how each part of the website would connect.
 
@@ -18,6 +18,7 @@ In future projects, these requirements would be easier to implement by planning 
 
 If I had more time, I would add more advanced features to Front Row Notes, such as allowing users to submit and save their own concert reviews permanently, adding artist search filters, including concert dates and locations, and creating a rating system. I would also improve the overall design with more animations and additional pages for music news, festivals, and upcoming concerts.
 
+---
 
 4. Notes for My Future Self
 
