@@ -27,7 +27,7 @@ if (reviewForm) {
 
     localStorage.setItem("reviewName", name);
 
-    message.textContent = "✅ Thanks for sharing your concert experience!";
+    message.textContent = "Thanks for sharing your concert experience!";
     message.style.color = "lightgreen";
 
     alert("Your review has been submitted!");
