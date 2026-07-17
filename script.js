@@ -36,3 +36,17 @@ if (reviewForm) {
     count.textContent = "0 / 300 characters";
   });
 }
+
+//hpme pg
+
+const subscribeForm = document.getElementById("subscribeForm");
+
+if (subscribeForm) {
+  subscribeForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert("Thanks for subscribing!");
+
+    subscribeForm.reset();
+  });
+}
